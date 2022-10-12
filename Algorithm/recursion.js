@@ -31,3 +31,10 @@ const productOfArray = (arr) => {
 console.log(productOfArray([1, 2, 3]));
 
 /* **************************************************** */
+
+function recursiveRange(num) {
+  if (num === 0) return 0;
+  return num + recursiveRange(num - 1);
+}
+
+console.log(recursiveRange(6));
